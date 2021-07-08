@@ -8,9 +8,9 @@ app.use(express.json());
 Rotas / Recursos (tabela no BD)
 */
 
-app.get('/projects/:id', (req, res) => {
-  const params = req.params;
-  console.log(params);
+app.get('/projects', (req, res) => {
+  const body = req.body;
+  console.log(body);
   return res.json({ project: 'close my issue', author: 'Vinicius Avena' });
 });
 
