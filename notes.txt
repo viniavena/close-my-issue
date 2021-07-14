@@ -1,0 +1,34 @@
+/*
+Rotas / Recursos (tabela no BD)
+
+BD: SQLite
+Querybuilder: Knex
+
+Entidades: representa o que vai ser salvo no bd
+    Usuários com issues abertas: openers
+    Issues abertas: issues
+
+    Futuramente:
+        Usuários para fechar issues: closers
+
+Funcionalidades: 
+    Login dos openers
+    Logout dos openers
+    Cadastro dos openers
+    Openers podem listar suas issues abertas
+    Openers podem fazer o cadastro de issues
+        "    "    deletar issues 
+        "    "    fechar issues (dar closes): quando tiver sido solucionada/contratado um closer
+
+    No app podemos listar todas as issues abertas por todos os openers
+
+    Futuramente:
+        Login dos closers
+        Logout dos closers
+        Cadastro dos closers
+        Closers vao poder se indicar para fechar aquela issue aberta
+        Openers vão poder visualizar closers para aquela issue
+        Openers vão poder aceitar UM closer para fechar aquela issue
+
+
+*/
