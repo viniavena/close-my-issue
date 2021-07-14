@@ -4,7 +4,18 @@ const connection = require('../database/connection');
 
 module.exports = {
   async create(req, res) {
-    const {} = req.headers;
-    const { title, description, price } = req.body;
+    const opener_id = req.headers.authorization;
+    const { title, description, price, username } = req.body;
+    const opener_username = username;
+
+    const [id] = await connection('issues').insert({
+      title,
+      description,
+      price,
+      opener_id,
+      opener_username,
+    });
+
+    return res.json({ id });
   },
 };

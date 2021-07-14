@@ -5,6 +5,7 @@ exports.up = function (knex) {
     table.string('title').notNullable();
     table.string('description').notNullable();
     table.decimal('price').notNullable();
+    table.string('link').notNullable();
 
     table.string('opener_id').notNullable(); // relacionamento
     table.string('opener_username').notNullable(); // relacionamento
